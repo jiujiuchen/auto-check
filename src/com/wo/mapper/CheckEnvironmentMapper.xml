@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wo.mapper.CheckEnvironmentMapper">
+	<!-- 批量插入CabinetInfoPoMapper -->
+	<insert id="insertRecord" parameterType="com.wo.entity.RecordInfoPo">
+		INSERT INTO
+		T_RECORD_INFO VALUES(
+		#{recordId},
+		#{resPoolName},
+		#{resPoolType},
+		#{resPoolExcelName},
+		#{deployExcelName},
+		#{uploadStatus},
+		#{excelPath},
+		#{projectLeader},
+		#{projectTel},
+		#{projectMail},
+		#{projectDate},
+		#{errorInfo}
+		)
+	</insert>
+
+	<!-- 查询所有的记录记录 -->
+	<select id="findRecord" parameterType="map"
+		resultType="com.wo.entity.RecordInfoPo">
+		SELECT * FROM T_RECORD_INFO ORDER BY PROJECTDATE DESC
+		<!-- <where> <if test="resoucePoolName!=null and resoucePoolName!=''"> 
+			resoucePoolName LIKE CONCAT(CONCAT('%', #{resoucePoolName}),'%') ORDER BY 
+			resoucePoolName </if> </where> -->
+		LIMIT #{star},#{rows}
+	</select>
+
+	<select id="countRecord" parameterType="map" resultType="int">
+		SELECT COUNT(*) AS TOTAL FROM T_RECORD_INFO
+	</select>
+
+</mapper>

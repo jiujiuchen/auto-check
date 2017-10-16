@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>content</title>
+<style type="text/css">
+.example {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+<script>
+    	var dwyxsj_all_url = 'http://10.19.13.33:8080/MWWebSite/ppt/gw/change_fsdlall.jsp';
+    	var dwyxsj1_min_url = 'http://10.19.13.33:8080/MWWebSite/ppt/gw/change_fsdl.jsp';
+
+	 
+		var isRead=false;
+		function addMessage(){
+			isRead = true;
+		}
+		
+		function js_isRead(){
+        	return isRead;
+        }
+		
+		function dwyxsj_asUserJs()
+		{
+			thisMovie("dwyxsj").jsUseAs(dwyxsj_all_url);
+			thisMovie("dwyxsj").jsdwyxmin(dwyxsj1_min_url);
+		}
+		
+		function thisMovie(movieName) {
+			if (navigator.appName.indexOf("Microsoft") != -1) {
+				return window[movieName];
+			}else{
+				return document[movieName];
+			}
+		}
+</script>
+</head>
+<body onload="addMessage();">
+	 <object  style="padding-top:0"
+								classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="dwyxsj"
+								width="100%" height="100%"
+								codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">
+								<param name="movie" value="ReportColumnMain.swf" />
+								<param name="quality" value="high" />
+								<param name="bgcolor" value="#869ca7" />
+								<param name="allowScriptAccess" value="sameDomain" />
+								<embed src="ReportColumnMain.swf" quality="high" bgcolor="#869ca7"
+									width="100%" height="60%" name="histreedemo" align="middle"
+									play="true" loop="false" quality="high"
+									allowScriptAccess="sameDomain"
+									type="application/x-shockwave-flash"
+									pluginspage="http://www.adobe.com/go/getflashplayer"> </embed>
+							</object>
+</body>
+</html>

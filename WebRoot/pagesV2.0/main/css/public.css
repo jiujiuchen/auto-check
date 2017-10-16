@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	font-family: "宋体", arial, serif;
+	color: #8A8A8A;
+	background-color: #fff;
+}
+
+h1,h2,h3,ul,li,dl,dt,dd,p,img,input,button {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-weight: normal;
+	list-style: none;
+	outline: none;
+}
+
+h2 {
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #676767;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+p {
+	color: #0B0B0B;
+	letter-spacing: 1px;
+}
+
+li {
+	float: left;
+}
+
+a:link,a:visited {
+	color: #288AB9;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #288AB9;
+}
+
+input {
+	width: 154px;
+	height: 25px;
+	line-height: 25px;
+	padding: 3px 10px 3px 42px;
+	margin-bottom: 22px;
+	display: block;
+	color: #666;
+	font-size: 12px;
+	background: none;
+	overflow: hidden;
+	_margin-bottom: 19px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.homeBody {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.fotn14 {
+	font-size: 14px;
+}
+
+.bold {
+	font-weight: bold;
+}
+/*--------------------header样式------------------------*/
+.header {
+	height: 69px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.headerTop {
+	height: 64px;
+	width: 100%;
+	background-color: #191a2c;
+	color: #7793a7;
+    -moz-box-shadow: inset 0 -1px 0 0 rgba(81,130,228,.15);
+    box-shadow: inset 0 -1px 0 0 rgba(81,130,228,.15);
+    -webkit-box-shadow:inset 0 -1px 0 0 rgba(81,130,228,.15);
+	/* background: url(../images/Index_headx_bg.png) repeat-x; */
+}
+
+.logo {
+	width:200px;
+	height: 64px;
+	/*padding-left:76px;
+	padding-top:24px; */
+	float:left;
+	background: url(../images/byC.png) no-repeat scroll 0 0 transparent;
+    -moz-box-shadow: inset -1px -1px 0 0 rgba(81,130,228,.15);
+    box-shadow: inset -1px -1px 0 0 rgba(81,130,228,.15);
+    -webkit-box-shadow:inset -1px -1px 0 0 rgba(81,130,228,.15);
+}
+
+.loginMsg {
+	width:265px;
+	height: 51px;
+	float:right;
+	padding-top:22px;
+	/* background: url(../images/header2_right.jpg) no-repeat scroll 0 0 transparent; */
+}
+
+.loginMsg li {
+	height: 30px;
+	height: 27px;
+	cursor: pointer;
+	margin-left:20px;
+	_display:inline;
+	zoom:1;
+	float: left;
+}
+
+.headerBot {
+	height: 24px;
+	padding: 8px 30px 0 180px;
+	background: url(../images/header_botBg.png) repeat-x;
+}
+
+.headerBot strong {
+	font-weight: normal;
+	color: #FD090B;
+	margin: 0 0px;
+}
+
+.headerBot .right strong {
+	background: url(../images/header_boticon1.jpg) no-repeat;
+	padding-left: 22px;
+}
+/*--------------------左侧菜单样式样式------------------------*/
+#side {
+	/* padding-top:30px; */
+	width:200px; 
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 2;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #3e3e3e;
+	background: #191a2c none repeat scroll 0 0; 
+	-moz-box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.15), 2px 0 0 0 rgba(0, 0, 0, 0.06), -1px 0 0 0 rgba(255, 255, 255, 0.03) inset;
+	-webkit-box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.15), 2px 0 0 0 rgba(0, 0, 0, 0.06), -1px 0 0 0 rgba(255, 255, 255, 0.03) inset;
+	box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.15), 2px 0 0 0 rgba(0, 0, 0, 0.06), -1px 0 0 0 rgba(255, 255, 255, 0.03) inset;
+/* 	background: url(../images/menu2_bg.jpg) repeat-y; */
+	
+}
+.menu1{
+	width:200px; 
+	height:auto;
+}
+.menu1 li {
+	width: 200px;
+	/* margin-left:34px; */
+	position: relative;
+	cursor: pointer;
+	margin-bottom:1px;
+}
+
+.menu1 li a {
+	display: block;
+	line-height: 34px;
+	text-indent: 40px;
+	/* background: #77CCF3; */
+	font-family: "微软雅黑";
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+	font-size:14px;
+}
+.menu1 li a:hover,.menu1 li a:focus,.menu1 li a:active{background: #24273e url("../images/nav-active.png") no-repeat scroll center bottom;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;}
+
+.menu2 {
+	 background-color: #191a2c;
+	 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+	 -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+	 -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.menu2 li {
+	width: 200px;
+	height: 34px;
+	margin-left:0;
+	line-height: 34px;
+	font-weight:normal;
+	font-size: 14px;
+	padding-left:55px;
+	color: rgba(255, 255, 255, 0.6);
+}
+.menuBottom{
+	width:200px; 
+	height:128px;
+	/* background: url(../images/menu2_bottom.jpg) no-repeat left bottom; */
+	position:absolute;
+	left:0;
+	bottom:0;
+	
+	
+	
+}
+/*   鼠标点击一级菜单的样式   鼠标点击一级菜单的时候字体变颜色   */
+.menu1Active {
+   background: #24273e url("../images/nav-active.png") no-repeat scroll center bottom;
+   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+   -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-weight:bold;
+}
+.li_cur{
+	
+	
+}
+/*   鼠标点击一级菜单的样式   鼠标点击一级菜单的时候字体变颜色   */
+.menu2 .menu2Active {
+	background: #24273e url("../images/nav-active.png") no-repeat scroll center bottom;
+   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+   -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+	
+}
+.menu-left-bg{  overflow-x:hidden; background: #191A2C;width: 217px;height: 100%;overflow: hidden;}

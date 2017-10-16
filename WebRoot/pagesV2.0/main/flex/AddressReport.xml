@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- 柱状图地址 -->
+	<ColumnAddress>http://10.100.3.71:8080/icms-auto/servlet/HistogramServlet</ColumnAddress>
+	<!-- 饼图地址 -->
+<!-- 	<PieAddress>http://10.100.3.71:8080/icms-auto/servlet/CountServlet</PieAddress> -->
+	
+	
+	<!-- 柱状图地址 -->
+<!-- 	<ColumnAddress></ColumnAddress> -->
+	<!-- 饼图地址 -->
+	<PieAddress></PieAddress>
+</config>   

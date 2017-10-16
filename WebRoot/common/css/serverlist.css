@@ -1,0 +1,625 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    /* vertical-align: baseline; */
+    font-family: "Tahoma", "MS Serif", "Microsoft YaHei";
+    font-size: 12px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background:#191a2c;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-width: 1px;
+    border-color: #666666;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.top{
+    width:100%;
+    height:45px;
+    line-height:45px;
+   color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    background:#191a2c;
+   /*  -webkit-box-shadow: 3px 3px 3px #e4e2df;
+    -moz-box-shadow: 3px 3px 3px #e4e2df;
+    box-shadow: 3px 3px 3px #e4e2df; */
+}
+.resourcePool{
+    width:15%;
+    margin-top:10px;
+    /* margin-left:5px; */
+    backgroud:#24273e !important;
+    border: 1px solid #28365E;
+    height:550px;
+}
+.resourcePool .resourcePool_title{
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    font-family: "寰蒋闆呴粦";
+    background:#202236; 
+    padding-left:10px;
+    color: rgba(255,255,255,.6);
+    font-weight:700; 
+    
+}
+#resourcePool_content{
+	/* width:134px; */
+    height:250px;
+    /*border:1px solid #828790; */
+    overflow-y: auto;
+}
+#resourcePool_content a{ 
+		line-height:32px; 
+		color: rgba(255,255,255,.8);
+		text-indent:10px;
+		cursor:pointer;
+		display:block;
+		margin:2px 0px; 
+		}
+#resourcePool_content a:hover,#resourcePool_content a:focus{background:#24273e; color:#76c0fb;}
+.resourcePool .resourcePool_tip{
+       background: #202236;
+    height: 254px;
+    padding: 8px;
+    line-height: 20px;
+    
+}
+.resourcePool .resourcePool_tip p{
+	width:130px;
+    font-size:12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.resourcePool .resourcePool_tip span{
+	width:130px;
+	height:25px;
+	display:block;
+}
+.main{
+    margin-top:20px;
+}
+.clear{
+    clear:both;
+}
+#serviceSn{
+	margin-left:-15px;
+}
+.pageFormContent{
+	padding-top: 0px;
+	padding-bottom: 7px; 
+	overflow: hidden;
+}
+.servicelist{
+    margin-top:10px;
+       margin-left: -1px;
+    width: 84%;
+}
+.tabs_div{width:393px;
+margin:10px auto;}
+.serviceGroup{
+     width:392px;
+     border:1px solid #28365e;
+}
+.serviceGroup li a{
+    width:130px;
+    text-align: center;
+    height:30px;
+    line-height:30px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size:14px;
+    text-decoration: none;
+}
+.serviceGroup li{    width: 130px;
+    text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    text-decoration: none;
+    border-right: 1px solid #28365E;
+    background: #24273e;
+    float:left;
+    border-bottom: none;
+     background:#202236;
+    }
+.serviceGroup li.border-none{border-right: none;}
+.serviceGroup li.active{
+    font-weight:700;
+    background:#2D74AC;
+    color: rgba(255, 255, 255);
+}
+.serviceGroup li.active a{color: rgba(255, 255, 255);}
+.search{
+    margin-top:30px;
+}
+.search label{
+    padding:0 10px;
+    font-size:12px;
+    font-family: "寰蒋闆呴粦";
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+.search input{
+       width: 142px;
+    height: 16px;
+    line-height: 16px;
+    padding: 4px 4px 4px;
+    background: #cfd2e2;
+    border: 1px solid #d5d5d5;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #333;
+}
+.search_btn{
+    margin-left:530px;
+}
+.search_btn button{
+    width:75px;
+    height:35px;
+    border-radius:5px;
+    background:#2388c5;
+    border:none;
+    color:#fff;
+    font-size:12px;
+    line-height:35px;
+}
+#serviceTable{
+    width:100%;
+    margin-top:20px;
+    text-align: center;
+}
+#serviceTable tr:nth-child(1){
+    height:50px;
+    line-height:50px;
+    background:#d7e1e0;
+}
+#serviceTable tr td{
+    vertical-align: middle;
+}
+#serviceTable input{
+    margin: 5px;
+    background:#23b85c;
+    height:25px;
+    border:none;
+    border-radius: 5px;
+    color:#fff;
+    padding:0 14px;
+    font-size:12px;
+}
+#deviceTable{
+    width:960px;
+    margin-top:30px;
+    text-align: center;
+}
+.device_btn{
+    margin-left:30px;
+    margin-top:20px;
+}
+.device_btn button{
+	margin-top:40px;
+}
+#deviceTable tr:nth-child(1){
+    height:50px;
+    line-height:50px;
+    background:#d7e1e0;
+}
+#deviceTable input{
+    margin: 5px;
+    height:25px;
+    border:none;
+    border-radius: 5px;
+    color:#fff;
+    padding:0 14px;
+    font-size:12px;
+}
+#deviceTable tr td{
+    vertical-align: middle;
+}
+.sourceTitle{
+    height:40px;
+    line-height:40px;
+    padding-left:20px;
+    font-size:12px;
+    font-family: "寰蒋闆呴粦";
+   /*  background:#202236; */
+    color:#fff;
+    margin-top:50px;
+}
+.sourceTitle span{
+    margin-right:25px;
+    width:60px;
+    height:30px;
+    color:#fff;
+    text-align: center;
+    font-size:12px;
+    line-height:30px;
+    background:#2388c5;
+    margin-top:5px;
+    border-radius:5px;
+}
+/* #sourceInformation{margin-top:10px;} */
+#sourceInformation p{
+    width:44%;
+    height:35px;
+    line-height:35px;
+    display:block;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left:50px;
+    float:left;  
+}
+.bgcolor-one{
+    background:#202236;}
+.bgcolor-two{background:#2B2E44;}
+.tab_container{ background:#24273e; border:1px solid #28365E; border-left: none; height: 450px;}
+
+ /* 查看服务器列表信息样式 */
+        #viewHostInfo{
+            width: 800px;
+            display:none; 
+        }
+        #viewHostInfo .left,#viewHostInfo .right{
+            width:330px;
+        }
+        #viewHostInfo .left label span{
+            width:90px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            float: left;
+            margin: 3px 0;
+            text-align: right;
+        }
+        #viewHostInfo .right label span{
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            float: left;
+            margin: 3px 0;
+            text-align: right;
+        }
+#viewHostInfo .left label input,#viewHostInfo .right label input{
+            width:210px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            margin: 3px 0;
+            float: left;
+              /* box-shadow: 3px 3px #ccc; */
+           background: rgb(207, 210, 226);
+            color: #333;
+            pading-left:5px;
+        }
+ /* 编辑服务器列表信息 */
+#editHostInfo{
+            display:none;
+        }
+#editHostInfo .left2,#editHostInfo .right2{
+            width:325px;
+        }
+#editHostInfo .left2 label span{
+            width:100px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            float: left;
+            margin: 3px 0;
+            text-align: right;
+        }
+#editHostInfo .right2 label span{
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            float: left;
+            text-align: right;
+        }
+#editHostInfo .left2 label input,.right2 label input{
+            width:185px;
+            height: 27px;
+            line-height: 27px;
+            display: block;
+            margin: 4px 0;
+            float: left;
+            padding-left: 5px;
+            border-radius:5px;
+            background-color:#cfd2e2 !important;
+            color:#333;
+            border:1px solid #d5d5d5;
+        }
+        /* 添加交换机样式 */
+#addSwitch,#editSwitch{
+            display: none;
+        }
+#addSwitch label,#editSwitch label{
+           /*  width: 190px; */
+            height: 40px;
+            display: block;
+            float: left;
+        }
+#addSwitch label span,#editSwitch label span{
+            width: 100px;
+            height: 30px;
+            line-height: 40px;
+            text-align: right;
+            display: block;
+            float: left;
+            vertical-align: middle;
+        }
+#addSwitch label input,#editSwitch label input{
+    width:185px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    margin: 3px 0;
+    float: left;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-color: #cfd2e2 !important;
+    color: #333;
+    border: 1px solid #d5d5d5;
+}
+#addSwitch select,#editSwitch select{
+            width: 170px;
+            height: 25px;
+        }
+        /* 添加服务器样式 */
+#addViewHostInfo{
+            width: 800px;
+            display:none; 
+        }
+#addViewHostInfo .left,#addViewHostInfo .right{
+            width:325px;
+            float:left;
+        }
+#addViewHostInfo .left label span{
+            width:100px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            float: left;
+            text-align: right;
+        }
+#addViewHostInfo .right label span{
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            float: left;
+            text-align: right;
+        }
+#addViewHostInfo .left label input,#addViewHostInfo .right label input{
+            width:195px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            margin: 5px 0;
+            float: left;
+              /* box-shadow: 3px 3px #ccc; */
+                background: rgb(207, 210, 226);
+            color: #333;
+            padding-left: 5px;
+    border-radius: 5px;
+        }
+/* 编辑资源池样式 */
+#editResourcepool{
+            display: none;
+        }
+#editResourcepool .left,#editResourcepool .right{
+            width:288px;
+        }
+       
+#editResourcepool label span{
+        width:100px;
+        height:40px;
+        display:block;
+        line-height:40px;
+        text-align:center;
+        float:left;
+        }
+#editResourcepool label input{
+         width:185px;
+         height:30px;
+         float:left;
+         margin:5px 0;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            float: left;
+            padding-left: 5px;
+            border-radius:5px;
+            color:#333;
+            background-color:#cfd2e2 !important;
+         }
+#editResourcebtn{
+    		position:absolute;
+   		 	right:45px;
+    		top:115px;
+    		text-align:center;
+         }
+        
+ html, body {
+	height: 100%;
+}
+#tab {
+	width: 100%;
+	position: relative;
+	margin: 40px auto;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+#tab .tab_menu {
+	width: 100%;
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
+
+#tab .tab_menu li {
+	float: left;
+	width: 92px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	border-bottom: 0px;
+	cursor: pointer;
+	text-align: center;
+	margin: 0 2px 0 0;
+}
+
+#tab .tab_box {
+	width: auto;
+	height: auto;
+	clear: both;
+	top: 30px;
+	position: relative;
+	border: 1px solid #CCC;
+	height: 100px;
+}
+
+#tab .tab_menu .selected {
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.tab_box div {
+	padding: 5px;
+}
+/* bat_tab */
+#bat_tab {
+	width: 100%;
+	position: relative;
+	margin: 40px auto;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+#bat_tab .bat_tab_menu {
+	width: 100%;
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
+
+#bat_tab .bat_tab_menu li {
+	float: left;
+	width: 92px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	border-bottom: 0px;
+	cursor: pointer;
+	text-align: center;
+	margin: 0 2px 0 0;
+}
+
+#bat_tab .bat_tab_box {
+	width: auto;
+	height: auto;
+	clear: both;
+	top: 30px;
+	position: relative;
+	border: 1px solid #CCC;
+	height: 100px;
+}
+
+#bat_tab .bat_tab_menu .selected {
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+
+.bat_hide {
+	display: none;
+}
+
+.bat_tab_box div {
+	padding: 5px;
+}
+ #viewHostInfo2{
+            width: 800px;
+            display:none; 
+        }
+#viewHostInfo2 .left,#viewHostInfo2 .right{
+            width:330px;
+            float:left;
+        }
+#viewHostInfo2 .left label span{
+            width:185px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            float: left;
+            margin: 3px 0;
+            text-align: right;
+        }
+#viewHostInfo2 .right label span{
+            width: 185px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            float: left;
+            margin: 3px 0;
+            text-align: right;
+        }
+#viewHostInfo2 .left label input,#viewHostInfo2 .right label input{
+            width:130px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            margin: 3px 0;
+            float: left;
+              /* box-shadow: 3px 3px #ccc; */
+                background: rgb(207, 210, 226);
+            color: #333;
+            pading-left:5px;
+        }
+.button-bar{margin: 0.5em 0px 0px;
+	padding: 1em 1em 1em .4em;
+    background: #24273e;
+    text-align:right;
+}

@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+.searchText {
+	width: 200px;
+	height: 14px;R
+	line-height:14px;
+	color: #858585;
+	background-color: #FFF;
+	border: 1px solid #D5D5D5;
+	padding: 5px 4px 6px;
+	font-size: 14px;
+}
+
+.searchText100 {
+	width: 170px;
+	height: 14px;
+	line-height: 14px;
+	color: #858585;
+	background-color: #FFF;
+	border: 1px solid #D5D5D5;
+	padding: 5px 4px 6px;
+	font-size: 14px;
+}
+
+.leftTree {
+	/* overflow-y: scroll;
+	overflow-x: scroll; */
+	max-height: 430px;
+	height: 430px;
+	background-color:#24273e;
+	float: left;
+	clear: right;
+	/* border-right: solid #EEEEEE 1PX; */
+	max-width:210px;
+	width: 220px;
+	border: 1px solid #24273e; 
+	border-top: 0px;
+	width: 16%;
+	margin-top:14px;
+}

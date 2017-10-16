@@ -1,0 +1,38 @@
+* {
+	font-size: 12px;
+}
+
+body {
+	font-size: 12px;
+	line-height: 1.5;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+}
+
+input {
+	border: 1px solid #ababab;
+}
+
+/* 2014.10.29 mijia 注释:原因，统一为按钮赋值，影响项目整体风格。
+input[type=button] {
+	background-color: #F1F8B4;
+}*/ 
+
+ul li { /*	margin-top: 5;*/
+	cursor: pointer;
+}
+
+form,h1,h2,h3,ul,ol,div {
+	margin: 0;
+	padding: 0;
+}
+
+.input_char10 {
+	width: 90px;
+}
+
+.input_char20 {
+	width: 140px;
+}

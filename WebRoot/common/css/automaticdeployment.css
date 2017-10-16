@@ -1,0 +1,111 @@
+ html, body {
+	height: 100%;
+}
+#tab {
+	width: 100%;
+	position: relative;
+	margin: 40px auto;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+#tab .tab_menu {
+	width: 100%;
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
+
+#tab .tab_menu li {
+	float: left;
+	width: 92px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	border-bottom: 0px;
+	cursor: pointer;
+	text-align: center;
+	margin: 0 2px 0 0;
+}
+
+#tab .tab_box {
+	width: auto;
+	height: auto;
+	clear: both;
+	top: 30px;
+	position: relative;
+	border: 1px solid #CCC;
+	height: 100px;
+}
+
+#tab .tab_menu .selected {
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.tab_box div {
+	padding: 5px;
+}
+bat_tab
+#bat_tab {
+	width: 100%;
+	position: relative;
+	margin: 40px auto;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+#bat_tab .bat_tab_menu {
+	width: 100%;
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
+
+#bat_tab .bat_tab_menu li {
+	float: left;
+	width: 92px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	border-bottom: 0px;
+	cursor: pointer;
+	text-align: center;
+	margin: 0 2px 0 0;
+}
+
+#bat_tab .bat_tab_box {
+	width: auto;
+	height: auto;
+	clear: both;
+	top: 30px;
+	position: relative;
+	border: 1px solid #CCC;
+	height: 100px;
+}
+
+#bat_tab .bat_tab_menu .selected {
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+
+.bat_hide {
+	display: none;
+}
+
+.bat_tab_box div {
+	padding: 5px;
+}
+.namest{
+	width:60px;
+}
+.Tcont{padding-right:24px;}
+.pageFormContent{
+	padding-top: 0px; 
+	padding-bottom:7px;
+	overflow: hidden;
+}

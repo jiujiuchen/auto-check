@@ -1,0 +1,241 @@
+@CHARSET "UTF-8";
+select.selInput2,.ui-widget select{-webkit-box-shadow: 0px 0 -2px -2px rgba(0, 0, 0, .5) inset;
+    -moz-box-shadow: 0px 0 -2px -2px rgba(0, 0, 0, .5) inset;
+    box-shadow: 0px 0 -2px -2px rgba(0, 0, 0, .5) inset;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    color: #384254;
+    background: #cfd2e2;
+    -moz-border-radius: 4px;
+	-webkit-border-radius:4px;
+	border-radius: 4px;}
+textarea.textarea-input,.ui-widget textarea{border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    color: #384254;
+    background: #cfd2e2;
+    -moz-border-radius: 4px;
+	-webkit-border-radius:4px;
+	border-radius: 4px;}
+/* tab */
+#tab {
+	width: 100%;
+	position: relative;
+	margin: 40px auto;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+#tab .tab_menu {
+	width: 100%;
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
+
+#tab .tab_menu li {
+	float: left;
+	width: 92px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	border-bottom: 0px;
+	cursor: pointer;
+	text-align: center;
+	margin: 0 2px 0 0;
+}
+
+#tab .tab_box {
+	width: auto;
+	height: auto;
+	clear: both;
+	top: 30px;
+	position: relative;
+	border: 1px solid #CCC;
+	height: 100px;
+}
+
+#tab .tab_menu .selected {
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.tab_box div {
+	padding: 5px;
+}
+/* bat_tab */
+#bat_tab {
+	width: 100%;
+	position: relative;
+	margin: 40px auto;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+#bat_tab .bat_tab_menu {
+	width: 100%;
+	float: left;
+	position: absolute;
+	z-index: 1;
+}
+
+#bat_tab .bat_tab_menu li {
+	float: left;
+	width: 92px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	border-bottom: 0px;
+	cursor: pointer;
+	text-align: center;
+	margin: 0 2px 0 0;
+}
+
+#bat_tab .bat_tab_box {
+	width: auto;
+	height: auto;
+	clear: both;
+	top: 30px;
+	position: relative;
+	border: 1px solid #CCC;
+	height: 100px;
+}
+
+#bat_tab .bat_tab_menu .selected {
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+
+.bat_hide {
+	display: none;
+}
+
+.bat_tab_box div {
+	padding: 5px;
+}
+html, body {
+	height: 100%;
+}
+ul,li {
+	list-style: none;
+}
+
+table.searchWrap {
+	overflow: hidden;
+	
+}
+
+table.searchWrap tr td {
+	color: rgba(255, 255, 255, .6);
+	height: 44px;
+	    width: 190px;
+}
+
+table.searchWrap .name {
+	width:80px;height:30px;line-height:25px;display:block;margin-top:10px;
+}
+table.searchWrap .nameid {
+	width:80px;height:40px;line-height:30px;display:block;margin-top:10px;
+}
+#searchWrap .name{
+width:80px;height:30px;line-height:28px;display:block;margin-top:10px;
+}
+table.searchWrap .namezi {
+	width: 0px;
+}
+table.searchWrap .namea {
+	width: 55px;
+}
+table.searchWrap .content {
+	width: 190px;
+}
+table.searchWrap .content input {
+	width: 154px;
+    height: 26px;
+    line-height: 26px;
+    padding: 4px 4px 4px;
+    font-size: 12px;
+    background: #cfd2e2;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:#333;
+}
+table.searchWrap .long {
+	width: 200px;
+}
+
+table.searchWrap .content input[type="radio" i] {width:12px;}
+.searchBtn_Wrap {
+/* 	width: 560px;
+	float: right;
+	height: 28px; */
+	text-align: right;
+	
+}
+.searchBtn_Wrapzi {
+	width: 380px;
+}
+.searchBtn_Wrapa {
+	width: 500px;
+}
+.searchBtn_Wrapaa {
+	width: 800px;
+}
+.searchBtn_Wrap input{
+	border:none;
+	cursor:pointer;
+}
+.radio {
+	width: 60px;
+	height: 20px;
+	float: left;
+}
+
+.radio input {
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin: 2px 2px 0 0;
+	border: none;
+}
+
+.mainSearchBt .bt {
+	width:144px;
+	height:28px;
+	display:inline-block;
+	background: url(../../images/auto/search3.0_bg.jpg) no-repeat;
+}
+.mainSearchBt .newsBt{
+	width:144px;
+	height:28px;
+	display:inline-block;
+	background: url(../../images/auto/TopBtn_Msg.png) no-repeat;
+}
+.mainSearchBt {
+	width:100%;
+	height: 26px;
+    margin-top:10px;
+    padding: 11px 0;
+    border-bottom: 0px solid #191A2C;
+    background: #24273e;
+}
+.searchBtn_Wrap input[disabled],.searchBtn_Wrap input:disabled{background:#aaa; color:#777; text-shadow: 0 -1px 0 rgba(255, 255, 255, .25) !important;}
+.searchBtn_Wrap .btn {
+	height: 28px;
+	background: #2D74AC;
+	display: inline-block;
+	margin-right: 5px;
+	text-align: center;
+	color: #fff;
+	font-weight:normal;
+	font-size:13px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.searchBtn_Wrap .btn:hover{background: #005C81;border:none;padding: 2px 8px;}
